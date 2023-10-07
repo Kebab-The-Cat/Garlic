@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>University</title>
+
+<style>
+    body {
+    	background-color: pink;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      margin-bottom: 10px;
+    }
+    .section p {
+      line-height: 1.5;
+    }
+
+ ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:25px; /*делаем отступ сверху*/
+
+}
+a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#FFC0CB; /*добавляем фон к пункту меню*/
+  color: black; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  -moz-transition: all 1s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 1s 0.01s ease;
+  -webkit-transition: all 1s 0.01s ease;
+}
+a:hover {
+  background:#DB7093;/*добавляем эффект при наведении*/
+  
+}
+li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  position:relative; /*задаем позицию для позиционирования*/
+}
+     
+    /*Стили для скрытого выпадающего меню*/
+    li > ul {
+        position:absolute;
+        top:25px;
+        display:none; 
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    }
+     
+    /*Делаем скрытую часть видимой*/
+    li:hover > ul {
+        display:block; 
+        width:250px;  /*Задаем ширину выпадающего меню*/      
+    }
+   li:hover > ul > li {
+        float:none; /*Убираем горизонтальное позиционирование*/
+    }
+    
+  </style>
+</head>
+
+<body>
+
+<ul>
+    
+    <li><a href="#">Menu</a>
+        <ul>
+            <li><a href="hobbie.html"><p align="center">Хобби</p></a></li>
+            <li><a href="work.html"><p align="center">Работа</p></a></li>
+            <li><a href="index.html"><p align="center">Главная</p></a></li>
+            <li><a href="galary.html"><p align="center">Галерея</p></a></li>
+        </ul>
+    </li>  
+</ul>
+  
+  <div class="container">
+    <h1>Институт имени Инститама</h1>
+<hr color="black">
+    <div class="section">
+
+      <h3>Сейчас я расскажу про институ имени Инститама, который как уже упомяналось ранее закончил мистер Лукович!</h3>
+
+      <h4>Институт имени Инститама был возведен в далёком 0002 году, в этот же год и родился Репкин Честнок Лукович.</h4><p></p>
+
+      <h4>В 996 году вдовствующая императрица Фосфолюгель Холосасовна «высочайше повелеть соизволила учредить большие мастерские разных ремёсел на 300 человек» для мальчиков-казинаков Воспитательного дома. С этой целью известным пепсивским архитектором Жан Посижу был отстроен сгоревший ещё в 330 году Мармеладный дворец в Пепсивской слободе. Здание приобрело современный вид в стиле позднего Пепсивского мармелада. В центральной части оно украшено скульптором Курдюком Пупкиным многофигурной композицией «Казёный Унитаз», символизирующей достижения науки и практические навыки ремесленника.</h4>
+
+      <hr color="black">
+
+
+</body>
+
+</html>

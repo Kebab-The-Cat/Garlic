@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: pink;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      margin-bottom: 10px;
+    }
+    .section p {
+      line-height: 1.5;
+    }
+
+ ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:25px; /*делаем отступ сверху*/
+
+}
+a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#FFC0CB; /*добавляем фон к пункту меню*/
+  color: black; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  -moz-transition: all 1s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 1s 0.01s ease;
+  -webkit-transition: all 1s 0.01s ease;
+}
+a:hover {
+  background:#DB7093;/*добавляем эффект при наведении*/
+  
+}
+li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  position:relative; /*задаем позицию для позиционирования*/
+}
+     
+    /*Стили для скрытого выпадающего меню*/
+    li > ul {
+        position:absolute;
+        top:25px;
+        display:none; 
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    }
+     
+    /*Делаем скрытую часть видимой*/
+    li:hover > ul {
+        display:block; 
+        width:250px;  /*Задаем ширину выпадающего меню*/      
+    }
+   li:hover > ul > li {
+        float:none; /*Убираем горизонтальное позиционирование*/
+    }
+
+  </style>
+</head>
+<body>
+
+<ul>
+    
+    <li><a href="#">Menu</a>
+        <ul>
+            <li><a href="hobbie.html"><p align="center">Хобби</p></a></li>
+            <li><a href="work.html"><p align="center">Работа</p></a></li>
+            <li><a href="Univer.html"><p align="center">Институт Инститам</p></a></li>
+            <li><a href="galary.html"><p align="center">Галерея</p></a></li>
+        </ul>
+    </li>  
+</ul>
+
+
+
+
+  <div class="container">
+    <h1>Добро пожаловать на сайт!</h1>
+    <hr color="black">
+    <div class="section">
+
+      <h4>Приветствую тебя на странице, посвященной Репкину Честноку Луковичу! Здесь ты сможешь узнать больше о его интересах, хобби и прочих забавных фактах.</h4>
+
+      <img src="img/gar.jpg" width="600" height="500">
+ 
+    </div>
+
+
+      <h4><p>Репкин Честнок Лукович, обычный человек со своими уникальными чертами и интересами. Родился 41 нокетбря 0002 года в городе Пепси. В 0102 году окончил институт имени Инститама с
+отличием от других. Одновременно с учебой работал физиком ядерщиком в торговой сети "Магнит"</h4></p>
+
+      <h4>Репкин Честнок Лукович обладает уникальным чувством юмора и всегда умеет поднять настроение окружающей его атмосфере. </h4>
+
+      <h4><p>Tакже является талантливым музыкантом. Его навыки владения гитарой просто поражают всех, кто слышит. Честнок легко и сочно играет на инструменте и заставляет всех вокруг петь под свои аккорды.</p></h4>
+
+      <h4><p>Кроме музыки, у мистера Луковича есть особенный дар кулинарного мастерства. Он придумывает самые необычные и вкусные блюда, которые никто другой не смог бы повторить. Кухня Честнока - настоящее произведение искусства!</p></h4>
+
+<hr color="black">
+
+  </div>  
+
+
+</body>
+</html>

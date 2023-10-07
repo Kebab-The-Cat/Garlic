@@ -1,0 +1,125 @@
+<html>
+
+<head>
+<title>Hobbie</title>
+
+<style>
+    body {
+    	background-color: pink;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      margin-bottom: 10px;
+    }
+    .section p {
+      line-height: 1.5;
+    }
+
+ ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:25px; /*делаем отступ сверху*/
+
+}
+a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#FFC0CB; /*добавляем фон к пункту меню*/
+  color: black; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  -moz-transition: all 1s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 1s 0.01s ease;
+  -webkit-transition: all 1s 0.01s ease;
+}
+a:hover {
+  background:#DB7093;/*добавляем эффект при наведении*/
+  
+}
+li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  position:relative; /*задаем позицию для позиционирования*/
+}
+     
+    /*Стили для скрытого выпадающего меню*/
+    li > ul {
+        position:absolute;
+        top:25px;
+        display:none; 
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    }
+     
+    /*Делаем скрытую часть видимой*/
+    li:hover > ul {
+        display:block; 
+        width:250px;  /*Задаем ширину выпадающего меню*/      
+    }
+   li:hover > ul > li {
+        float:none; /*Убираем горизонтальное позиционирование*/
+    }
+
+  </style>
+</head>
+
+<body>
+
+<ul>
+    
+    <li><a href="#">Menu</a>
+        <ul>
+            <li><a href="index.html"><p align="center">Главная</p></a></li>
+            <li><a href="work.html"><p align="center">Работа</p></a></li>
+            <li><a href="Univer.html"><p align="center">Институт Инститам</p></a></li>
+            <li><a href="galary.html"><p align="center">Галерея</p></a></li>
+        </ul>
+    </li>  
+</ul>
+
+	<div class="container">
+    <h1>Хобби Честнока Луковича!</h1>
+    <hr color="black">
+    <div class="section">
+
+      <h3>Эта страница посвящена хобби мистера Луковича, здесь вы узнаете много всего интересного!</h3>
+
+      <h4><p><li>Изучение пыли: Честнок страстно изучает пыль и уделяет много времени выращиванию и уходу за разнообразными видами пыли. Он имеет собственный огород, где выращивает пыль.</li><p>
+
+      	<li>Исследование магнитных полей домашних приборов: Мистер Лукович увлекается магнитными полями и проводит время экспериментируя с различными домашними приборами. Он любит исследовать разнообразные приборы и делиться магнитными полями с семьей и друзьями.</li><p>
+
+      	<li>Готовка избитого стекла: Репкин увлекается избиением стекла и проводит много времени со стеклом. Он может быть знатоком различных видов стекл, любит анализировать стекла и делиться своими впечатлениями с другими стеклами.</li><p></p>
+
+      	Так же мистер Честнок Лукович увлекается ещё тремя хобби:<p></p>
+
+      	Складывание пляжных камней<p></p>
+      	Сбор искуственных ноздрей<p></p>
+		Случайные чаяпития<p></p>
+
+      </p></h4>
+
+ 
+    </div>
+
+    <hr color="black">
+
+
+</body>
+
+</html>
